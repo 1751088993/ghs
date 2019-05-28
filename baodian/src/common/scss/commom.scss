@@ -1,0 +1,91 @@
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	background: #FFF;
+	font-size: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: -apple-system, 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons',
+		'Apple Legacy Chevron', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-input-placeholder {
+	color: #C8C8C8;
+	font-size: 15px;
+}
+
+input:disabled, textarea:disabled {
+	background: #ffffff;
+	color: #333333;
+    font-size: 15px;
+	opacity: 1;
+	// -webkit-text-fill-color:#333333;
+}
+button {
+	outline: none;
+}
+
+
+.confirm {
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+}
+.confirmInfo{
+	position: absolute;
+	background: #FFF;
+	width: 293px;
+	height: 177px;
+	top: 50%;
+	left: 50%;
+	margin-top: -88px;
+	margin-left: -146px;
+	border-radius:15px;
+}
+.confirmInfo .title {
+	position: relative;
+	width: 100%;
+	font-size:18px;
+	text-align: center;
+	font-weight: bold;
+	color:rgba(51,51,51,1);
+	line-height:18px;
+	margin: 26px 0 13px;
+}
+.confirmInfo .desc{
+	width: 100%;
+	text-align: center;
+	font-size:15px;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	line-height:27px;
+}
+.confirmInfo .btns{
+	position: absolute;
+	bottom: 14px;
+	display: block;
+	width: 100%;
+	float: left;
+}
+.confirmInfo .btns .ok{
+	width: 50%;
+	float: left;
+	text-align: center;
+	color:rgba(153,153,153,1);
+}
+.confirmInfo .btns .cancel{
+	width: 50%;
+	float: left;
+	text-align: center;
+	color:rgba(255,80,0,1);
+}
